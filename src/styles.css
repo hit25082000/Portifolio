@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  list-style-type: none;
+  text-decoration: none;
+  color: #f2e9e9;
+  margin: 0;
+}
+body {
+  padding: 0;
+  background: #262626;
+}
+
+.Click {
+  transform: translate() scale(0.1);
+  color: #00000000;
+}
+
+.IconModel.Click {
+  transform: translate(1000px, -100px) scale(0.3);
+  color: #00000000;
+}
+
+p.Click,
+.Click,
+h2.Click {
+  transform: translate(500px, -50px) scale(0.2);
+  color: #00000000;
+}
+
+.Home.Click {
+  transform: translate(680px, 0) scale(0.5);
+  color: #00000000;
+}
+
+.Alura.Click,
+.Rocketseat.Click {
+  transform: translate(680px, 0) scale(0.5);
+  color: #00000000;
+}
+
+.Contato.Click {
+  transform: translate(350px, 0) scale(0.5);
+  color: #00000000;
+}
+
+.NavList {
+  display: flex;
+  flex-direction: row;
+}
