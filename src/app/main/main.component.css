@@ -1,3 +1,8 @@
-.Description {
+main {
   margin: 2rem;
+}
+
+.Ceftifications {
+  display: flex;
+  justify-content: space-around;
 }
