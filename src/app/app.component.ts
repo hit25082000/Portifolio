@@ -1,12 +1,28 @@
-import { Component } from '@angular/core';
+import { AppService, GitProfile } from './app.service';
+import { Component, EventEmitter, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'Portifolio';
+export class AppComponent implements OnInit {
+  error: any;
+  headers: string[] = [];
+  config: GitProfile | undefined;
+
+  constructor(private AppService: AppService) {}
+
+  ngOnInit(): void {
+    this.showConfig();
+  }
+
+  showConfig() {
+    this.AppService.getConfig().subscribe({
+      next: (data: GitProfile) => (this.config = { ...data }), // success path
+      error: (error) => (this.error = error), // error path
+    });
+  }
 }
 
 // const url = 'https://api.github.com/users/hit25082000';

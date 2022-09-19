@@ -5,12 +5,6 @@ header {
   margin: 1.5rem;
 }
 
-.IconModel {
-  display: flex;
-  position: relative;
-  border-radius: 100%;
-}
-
 .NavList {
   display: flex;
   font-size: large;
@@ -21,17 +15,15 @@ header {
   padding: 1em;
 }
 
-.IconModel img {
-  margin: 1em;
-  width: 20vw;
-  height: 20vw;
+.IconModel {
+  width: clamp(50px, 50%, 250px);
   border-radius: 100%;
   border: black solid 1px;
 }
 
-.IconModel a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.IconModel:hover {
   border-radius: 100%;
+  opacity: 0.5;
 }
 
 .NavList .Projetos {
