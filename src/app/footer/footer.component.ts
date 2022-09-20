@@ -1,3 +1,10 @@
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { GitProfile } from '../app.service';
 
@@ -5,11 +12,23 @@ import { GitProfile } from '../app.service';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
+  animations: [
+    trigger('blackHole', [
+      state('stable', style({})),
+      state('caos', style({})),
+
+      transition('stable => caos', [animate('5s')]),
+      transition('caos => stable', [animate('2s')]),
+    ]),
+  ],
 })
 export class FooterComponent implements OnInit {
   @Input() git: GitProfile;
+  @Input() animation: boolean;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.animation);
+  }
 }

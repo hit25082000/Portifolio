@@ -1,6 +1,6 @@
 <header>
-    <img class="IconModel" src={{git.avatar_url}} alt="">
+    <img [@blackHole]="animation ? 'caos' : 'stable'" class="IconModel" src={{git.avatar_url}} alt="">
   <nav class="NavList">
-    <a (click)="BlackHole()" class="Projetos">Projetos</a>
+    <app-black-hole (newItemEvent)="Absorbtion()"></app-black-hole>
   </nav>
 </header>

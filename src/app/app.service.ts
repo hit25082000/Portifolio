@@ -41,7 +41,7 @@ export interface GitProfile {
   providedIn: 'root',
 })
 export class AppService {
-  configUrl = 'https://api.github.com/users/gabrielsalomao';
+  configUrl = 'https://api.github.com/users/hit25082000';
 
   constructor(private http: HttpClient) {}
 

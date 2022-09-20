@@ -1,8 +1,8 @@
 <main>
-  <div class="Description">
+  <div [@blackHole]="animation ? 'caos' : 'stable'" class="Description">
     <p>Ola meu nome é {{git.name}} {{git.bio}}</p> <br> estou trabalhando em {{git.company}}
   </div>
-  <section class="Ceftifications">
+  <section [@blackHole]="animation ? 'caos' : 'stable'" class="Ceftifications">
     <iframe src="../../assets/Certificado Alura.pdf" width="600" height="780" style="border: none;"></iframe>
   </section>
 </main>
