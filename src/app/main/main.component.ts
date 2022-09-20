@@ -1,5 +1,5 @@
 import { GitProfile } from './../models/git-profile/git-profile';
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -7,5 +7,7 @@ import { Component, OnInit, Output } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
+  @Input() git: GitProfile;
+
   ngOnInit(): void {}
 }
