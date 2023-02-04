@@ -6,10 +6,14 @@
   text-decoration: none;
   color: #1cdf02;
   margin: 0;
+
+
 }
 body {
   padding: 0;
   background: #000000;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
 }
 
 .Click {

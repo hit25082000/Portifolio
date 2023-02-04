@@ -1,1 +1,7 @@
+footer{
+  z-index: -1;
+}
 
+.blackholeHeader{
+  z-index: 7;
+}

@@ -15,9 +15,9 @@ import { GitProfile } from '../app.service';
   animations: [
     trigger('blackHole', [
       state('stable', style({})),
-      state('caos', style({})),
+      state('caos', style({ opacity: 0})),
 
-      transition('stable => caos', [animate('5s')]),
+      transition('stable => caos', [animate('4s')]),
       transition('caos => stable', [animate('2s')]),
     ]),
   ],
